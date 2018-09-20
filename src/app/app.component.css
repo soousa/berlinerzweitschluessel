@@ -20,3 +20,25 @@ h1 {
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+.fixed {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navbar a {
+float: left;
+display: block;
+}
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+.main {
+margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
