@@ -24,6 +24,7 @@
     "@clr/icons": "^0.13.1-patch.1",
     "@clr/ui": "^0.13.1-patch.1",
     "@webcomponents/custom-elements": "^1.0.0",
+    "angular-ga": "^1.0.0",
     "core-js": "^2.5.4",
     "intersection-observer": "^0.5.0",
     "ng-in-viewport": "^6.0.2",

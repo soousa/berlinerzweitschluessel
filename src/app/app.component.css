@@ -39,6 +39,6 @@ color: black;
 .main {
 margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+.btn-default {
+  box-shadow: 1px 2px 5px #000000;   
 }
