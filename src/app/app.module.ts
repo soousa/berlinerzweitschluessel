@@ -17,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     GoogleAnalyticsModule.forRoot()
   ],
-  providers: [{ provide: GA_TOKEN, useValue: 'UA-TOKEN-1' }],
+  providers: [
+          { provide: GA_TOKEN, useValue: 'UA-TOKEN-1' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
