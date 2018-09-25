@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { GoogleAnalyticsModule, GA_TOKEN } from 'angular-ga';
+import { Angulartics2RouterlessModule  } from 'angulartics2/routerlessmodule';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 
 import { AppComponent } from './app.component';
@@ -9,16 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     ClarityModule,
-    BrowserAnimationsModule,
-    GoogleAnalyticsModule.forRoot()
-  ],
-  providers: [
-          { provide: GA_TOKEN, useValue: 'UA-TOKEN-1' }],
+    BrowserAnimationsModule,   
+    Angulartics2RouterlessModule.forRoot([Angulartics2GoogleAnalytics]),
+  ], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

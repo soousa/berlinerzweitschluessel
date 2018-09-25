@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { GoogleAnalyticsService } from 'angular-ga';
+import { Component } from '@angular/core';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+
 
 
 @Component({
@@ -8,19 +9,8 @@ import { GoogleAnalyticsService } from 'angular-ga';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
-   
-  title = 'BerlinerZweitschlüssel';
-
-	constructor(
-		private gaService: GoogleAnalyticsService
-	) { }
-
-	ngOnInit() {
-		this.gaService.event.emit({
-			category: 'app',
-			action: 'bootstrap'
-		});
-	}
+export class AppComponent {   
+	title = 'BerlinerZweitschlüssel';
+	constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
 }
 
