@@ -26,6 +26,7 @@
     "@webcomponents/custom-elements": "^1.0.0",
     "angulartics2": "^6.3.0",
     "core-js": "^2.5.4",
+    "googleapis": "^33.0.0",
     "intersection-observer": "^0.5.0",
     "ng-in-viewport": "^6.0.2",
     "rxjs": "~6.2.0",

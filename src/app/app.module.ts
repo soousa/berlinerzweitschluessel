@@ -9,10 +9,14 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { AppComponent } from './app.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceListComponent } from './service-list/service-list.component';
+import { ServiceItemComponent } from './service-list/service-item/service-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ServiceListComponent,
+    ServiceItemComponent,
   ],
   imports: [
     BrowserModule,
