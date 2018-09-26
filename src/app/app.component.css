@@ -3,7 +3,7 @@
     margin: 2em;
   }
   body, input[text], button {
-    color: #888;
+    
   }
   /* everywhere else */
   * {
@@ -33,4 +33,10 @@ margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 .mainlink {
 background-color: #444;
+}
+.headline {
+  text-align: center;
+}
+#carousselcarouselExampleSlides {
+  text-align: center;
 }
