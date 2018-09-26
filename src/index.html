@@ -1,22 +1,60 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Berlinerzweitschluessel</title>
-  <base href="/">
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BerlinerZweitschluessel</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="icon" type="image/x-icon" href="favicon1.ico">
+    <!--link rel="apple-touch-icon" href="././src/assets/icons/favicon1.icon"-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <style>
+      app-root:empty+.splash {
+        opacity: 1;
+        z-index: 100;
+      }
+      .splash {
+        opacity: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        color: #272c33;
+        padding-top: 25vh;
+        text-align: center;
+        z-index: -1;
+        font-family: monospace;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-126399057-1', 'auto');
+      </script>
+
+
+
+    <app-root></app-root>
+
+    <div class="splash" id="content">
+      <img src="/assets/icons/favicon1.ico" width="256px" alt="BZS">
+      <h1>BerlinerZweitschluessel</h1>
+    </div>
+
+    <noscript>
+      <p>
+        JavaScript must be enabled to use this app!
+      </p>
+    </noscript>
+
+      <script src="https://js.stripe.com/v3/"></script>
+
     
-    ga('create', 'UA-126399057-1', 'auto');
-    </script>
-</body>
-</html>
+  </body>
+  </html>
