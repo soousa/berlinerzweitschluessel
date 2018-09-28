@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { Title } from '@angular/platform-browser';
 
 
 
@@ -10,6 +13,11 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 })
 
 export class AppComponent {   
-	title = 'BerlinerZweitschlüssel';
-	constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
+  // Title = 'BerlinerZweitschluessel';
+  // constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {};
+
+  items: Observable<any[]>;
+  constructor(db: AngularFirestore) {
+  this.items = db.collection('items').valueChanges();
+  }
 }

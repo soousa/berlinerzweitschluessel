@@ -40,7 +40,6 @@ background-color: #444;
 #carousselcarouselExampleSlides {
   text-align: center;
 }
-.btn btn-lg btn-primary:first-child {
-
-
+#carouselExampleSlidesOnly {
+  height:4%;
 }
